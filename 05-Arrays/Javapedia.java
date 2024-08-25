@@ -5,9 +5,8 @@ public class Javapedia {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("\n**********Javapedia**********");
-        System.out.println("How many historical figures will you register?");
 
+        System.out.println("How many historical figures will you register?");
         int answer = scan.nextInt();
         String[][] database = new String[answer][3];
         scan.nextLine(); 
@@ -36,6 +35,7 @@ public class Javapedia {
                 System.out.println("\tOccupation: " + database[i][2]);
             }
         }  
+
         scan.close();
     }
 
