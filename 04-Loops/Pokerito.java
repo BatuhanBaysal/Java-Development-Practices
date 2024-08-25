@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 public class Pokerito {
+
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Let's play Pokerito. Type anything when you're ready.");
         scan.nextLine();
-
         System.out.println("It's like Poker, but a lot simpler\n");
         System.out.println(" - There are two players, you and the computer.");
         System.out.println(" - The dealer will give each player one card.");
@@ -28,8 +28,9 @@ public class Pokerito {
         int yourMatches = 0;
         int computerMatches =0;
 
-        System.out.println("Now, the dealer will draw five cards. Press enter to continue.");
-        for (int i = 1; i <= 8; i++) {
+        System.out.println("Now, the dealer will draw seven cards. Press enter to continue.");
+
+        for (int i = 1; i <= 7; i++) {
             scan.nextLine();
             String draw = randomCard(); 
             

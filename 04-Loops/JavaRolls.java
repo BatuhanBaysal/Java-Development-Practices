@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class JavaRolls {
+
     public static void main(String[] args) {
         
         Scanner scan = new Scanner(System.in);
@@ -18,6 +19,7 @@ public class JavaRolls {
             scan.nextLine();
             int diceRoll = rollDice();
             System.out.print("You rolled a " + diceRoll + ". ");
+            
             if (diceRoll == 6) {
                 System.out.println("End of game.");
                 break;

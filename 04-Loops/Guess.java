@@ -1,12 +1,14 @@
 import java.util.Scanner;
 
 public class Guess  {
+
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
         System.out.print("\nHow many trials do you want? (Very Hard: 1-3 try, Hard: 4-6, Medium 7-10 try, Easy 11-20 try) >>> ");
         int trial = scan.nextInt();
+        
         while (trial < 1 || trial > 20) {
             System.out.print("Please enter a number between 1 and 20! >>> ");
             trial = scan.nextInt();

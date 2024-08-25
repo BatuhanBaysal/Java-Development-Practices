@@ -6,16 +6,15 @@ public class Blackjack {
 
     public static void main(String[] args) {
         
-        System.out.println("\nWelcome to Java Casino!");
+        System.out.println("\nWelcome to Casino!");
         System.out.println("Do you have a knack for Black Jack?");
-        System.out.println("We shall see..");
-        System.out.println("..Ready? Press anything to begin!");
+        System.out.println("We shall see... Ready? Press anything to begin!");
         scan.nextLine();
 
         int randomCard1 = randomCard();
         int randomCard2 = randomCard();
 
-        System.out.println("\n You get a " + cardString(randomCard1) + " and " + cardString(randomCard2));
+        System.out.println("\nYou get a " + cardString(randomCard1) + " and " + cardString(randomCard2));
         int handValue = Math.min(randomCard1, 10) + Math.min(randomCard2, 10);
         System.out.println("\nYour total is: " + handValue);
 
@@ -35,7 +34,7 @@ public class Blackjack {
 
             int newCard = randomCard();
             handValue += Math.min(newCard, 10);
-            System.out.println("\nYou get a\n" + cardString(newCard));
+            System.out.println("\nYou get a " + cardString(newCard));
             System.out.println("your total is " + handValue);
 
             if (handValue > 21) {
@@ -45,7 +44,7 @@ public class Blackjack {
        }
 
         System.out.println("\nDealer's turn");
-        System.out.println("\n The dealer's cards are \n" + cardString(dealerRandomCard1) + " and a " + cardString(dealerRandomCard2));
+        System.out.println("\n The dealer's cards are " + cardString(dealerRandomCard1) + " and a " + cardString(dealerRandomCard2));
         System.out.println("Dealer's total is " + dealerHandValue);
 
         while (dealerHandValue < 17) {
