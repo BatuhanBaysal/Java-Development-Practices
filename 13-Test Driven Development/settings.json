@@ -1,0 +1,12 @@
+{
+    "redhat.telemetry.enabled": true,
+    "files.autoSave": "afterDelay",
+    "editor.inlayHints.enabled": "off",
+    "workbench.colorTheme": "Brackets Dark Pro",
+    "editor.fontSize": 16,
+    "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "C:/Users/batuh/Downloads/junit-platform-console-standalone-1.8.0-M1.jar"
+]
+
+}
